@@ -10,7 +10,7 @@ MIT
 MIT
 MIT
 
-@ngx-translate/core@12.1.2
+@ngx-translate/core@10.0.2
 MIT
 MIT
 

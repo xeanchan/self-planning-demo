@@ -79273,30 +79273,28 @@ var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('6.1.10'
 /*!**********************************************************************!*\
   !*** ./node_modules/@ngx-translate/core/fesm5/ngx-translate-core.js ***!
   \**********************************************************************/
-/*! exports provided: DEFAULT_LANGUAGE, FakeMissingTranslationHandler, MissingTranslationHandler, TranslateCompiler, TranslateDefaultParser, TranslateDirective, TranslateFakeCompiler, TranslateFakeLoader, TranslateLoader, TranslateModule, TranslateParser, TranslatePipe, TranslateService, TranslateStore, USE_DEFAULT_LANG, USE_EXTEND, USE_STORE */
+/*! exports provided: TranslateModule, TranslateLoader, TranslateFakeLoader, USE_STORE, USE_DEFAULT_LANG, TranslateService, MissingTranslationHandler, FakeMissingTranslationHandler, TranslateParser, TranslateDefaultParser, TranslateCompiler, TranslateFakeCompiler, TranslateDirective, TranslatePipe, TranslateStore */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DEFAULT_LANGUAGE", function() { return DEFAULT_LANGUAGE; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FakeMissingTranslationHandler", function() { return FakeMissingTranslationHandler; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MissingTranslationHandler", function() { return MissingTranslationHandler; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateCompiler", function() { return TranslateCompiler; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateDefaultParser", function() { return TranslateDefaultParser; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateDirective", function() { return TranslateDirective; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateFakeCompiler", function() { return TranslateFakeCompiler; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateFakeLoader", function() { return TranslateFakeLoader; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateLoader", function() { return TranslateLoader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateModule", function() { return TranslateModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateParser", function() { return TranslateParser; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslatePipe", function() { return TranslatePipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateService", function() { return TranslateService; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateStore", function() { return TranslateStore; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "USE_DEFAULT_LANG", function() { return USE_DEFAULT_LANG; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "USE_EXTEND", function() { return USE_EXTEND; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateLoader", function() { return TranslateLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateFakeLoader", function() { return TranslateFakeLoader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "USE_STORE", function() { return USE_STORE; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "USE_DEFAULT_LANG", function() { return USE_DEFAULT_LANG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateService", function() { return TranslateService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MissingTranslationHandler", function() { return MissingTranslationHandler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FakeMissingTranslationHandler", function() { return FakeMissingTranslationHandler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateParser", function() { return TranslateParser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateDefaultParser", function() { return TranslateDefaultParser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateCompiler", function() { return TranslateCompiler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateFakeCompiler", function() { return TranslateFakeCompiler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateDirective", function() { return TranslateDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslatePipe", function() { return TranslatePipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateStore", function() { return TranslateStore; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 
@@ -79305,26 +79303,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
  * @abstract
  */
-var  /**
- * @abstract
- */
-TranslateLoader = /** @class */ (function () {
+var TranslateLoader = /** @class */ (function () {
     function TranslateLoader() {
     }
     return TranslateLoader;
 }());
-if (false) {}
 /**
  * This loader is just a placeholder that does nothing, in case you don't need a loader at all
  */
 var TranslateFakeLoader = /** @class */ (function (_super) {
-    Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__extends"])(TranslateFakeLoader, _super);
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(TranslateFakeLoader, _super);
     function TranslateFakeLoader() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -79332,40 +79322,27 @@ var TranslateFakeLoader = /** @class */ (function (_super) {
      * @param {?} lang
      * @return {?}
      */
-    TranslateFakeLoader.prototype.getTranslation = /**
-     * @param {?} lang
-     * @return {?}
-     */
-    function (lang) {
+    TranslateFakeLoader.prototype.getTranslation = function (lang) {
         return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])({});
     };
-    TranslateFakeLoader.decorators = [
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"] }
-    ];
     return TranslateFakeLoader;
 }(TranslateLoader));
+TranslateFakeLoader.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"] },
+];
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes} checked by tsc
  */
-/**
- * @record
- */
-function MissingTranslationHandlerParams() { }
-if (false) {}
 /**
  * @abstract
  */
-var  /**
- * @abstract
- */
-MissingTranslationHandler = /** @class */ (function () {
+var MissingTranslationHandler = /** @class */ (function () {
     function MissingTranslationHandler() {
     }
     return MissingTranslationHandler;
 }());
-if (false) {}
 /**
  * This handler is just a placeholder that does nothing, in case you don't need a missing translation handler at all
  */
@@ -79376,24 +79353,57 @@ var FakeMissingTranslationHandler = /** @class */ (function () {
      * @param {?} params
      * @return {?}
      */
-    FakeMissingTranslationHandler.prototype.handle = /**
-     * @param {?} params
-     * @return {?}
-     */
-    function (params) {
+    FakeMissingTranslationHandler.prototype.handle = function (params) {
         return params.key;
     };
-    FakeMissingTranslationHandler.decorators = [
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"] }
-    ];
     return FakeMissingTranslationHandler;
 }());
+FakeMissingTranslationHandler.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"] },
+];
+
+/**
+ * @abstract
+ */
+var TranslateCompiler = /** @class */ (function () {
+    function TranslateCompiler() {
+    }
+    return TranslateCompiler;
+}());
+/**
+ * This compiler is just a placeholder that does nothing, in case you don't need a compiler at all
+ */
+var TranslateFakeCompiler = /** @class */ (function (_super) {
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(TranslateFakeCompiler, _super);
+    function TranslateFakeCompiler() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    /**
+     * @param {?} value
+     * @param {?} lang
+     * @return {?}
+     */
+    TranslateFakeCompiler.prototype.compile = function (value, lang) {
+        return value;
+    };
+    /**
+     * @param {?} translations
+     * @param {?} lang
+     * @return {?}
+     */
+    TranslateFakeCompiler.prototype.compileTranslations = function (translations, lang) {
+        return translations;
+    };
+    return TranslateFakeCompiler;
+}(TranslateCompiler));
+TranslateFakeCompiler.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"] },
+];
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes} checked by tsc
  */
-/* tslint:disable */
 /**
  * Determines if two objects or two values are equivalent.
  *
@@ -79414,17 +79424,7 @@ function equals(o1, o2) {
         return false;
     if (o1 !== o1 && o2 !== o2)
         return true; // NaN === NaN
-    // NaN === NaN
-    /** @type {?} */
-    var t1 = typeof o1;
-    /** @type {?} */
-    var t2 = typeof o2;
-    /** @type {?} */
-    var length;
-    /** @type {?} */
-    var key;
-    /** @type {?} */
-    var keySet;
+    var /** @type {?} */ t1 = typeof o1, /** @type {?} */ t2 = typeof o2, /** @type {?} */ length, /** @type {?} */ key, /** @type {?} */ keySet;
     if (t1 == t2 && t1 == 'object') {
         if (Array.isArray(o1)) {
             if (!Array.isArray(o2))
@@ -79458,7 +79458,6 @@ function equals(o1, o2) {
     }
     return false;
 }
-/* tslint:enable */
 /**
  * @param {?} value
  * @return {?}
@@ -79479,15 +79478,9 @@ function isObject(item) {
  * @return {?}
  */
 function mergeDeep(target, source) {
-    /** @type {?} */
-    var output = Object.assign({}, target);
+    var /** @type {?} */ output = Object.assign({}, target);
     if (isObject(target) && isObject(source)) {
-        Object.keys(source).forEach((/**
-         * @param {?} key
-         * @return {?}
-         */
-        function (key) {
-            var _a, _b;
+        Object.keys(source).forEach(function (key) {
             if (isObject(source[key])) {
                 if (!(key in target)) {
                     Object.assign(output, (_a = {}, _a[key] = source[key], _a));
@@ -79499,31 +79492,24 @@ function mergeDeep(target, source) {
             else {
                 Object.assign(output, (_b = {}, _b[key] = source[key], _b));
             }
-        }));
+            var _a, _b;
+        });
     }
     return output;
 }
 
 /**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
  * @abstract
  */
-var  /**
- * @abstract
- */
-TranslateParser = /** @class */ (function () {
+var TranslateParser = /** @class */ (function () {
     function TranslateParser() {
     }
     return TranslateParser;
 }());
-if (false) {}
 var TranslateDefaultParser = /** @class */ (function (_super) {
-    Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__extends"])(TranslateDefaultParser, _super);
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(TranslateDefaultParser, _super);
     function TranslateDefaultParser() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super.apply(this, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"])(arguments)) || this;
         _this.templateMatcher = /{{\s?([^{}\s]*)\s?}}/g;
         return _this;
     }
@@ -79532,14 +79518,8 @@ var TranslateDefaultParser = /** @class */ (function (_super) {
      * @param {?=} params
      * @return {?}
      */
-    TranslateDefaultParser.prototype.interpolate = /**
-     * @param {?} expr
-     * @param {?=} params
-     * @return {?}
-     */
-    function (expr, params) {
-        /** @type {?} */
-        var result;
+    TranslateDefaultParser.prototype.interpolate = function (expr, params) {
+        var /** @type {?} */ result;
         if (typeof expr === 'string') {
             result = this.interpolateString(expr, params);
         }
@@ -79548,7 +79528,7 @@ var TranslateDefaultParser = /** @class */ (function (_super) {
         }
         else {
             // this should not happen, but an unrelated TranslateService test depends on it
-            result = (/** @type {?} */ (expr));
+            result = /** @type {?} */ (expr);
         }
         return result;
     };
@@ -79557,14 +79537,8 @@ var TranslateDefaultParser = /** @class */ (function (_super) {
      * @param {?} key
      * @return {?}
      */
-    TranslateDefaultParser.prototype.getValue = /**
-     * @param {?} target
-     * @param {?} key
-     * @return {?}
-     */
-    function (target, key) {
-        /** @type {?} */
-        var keys = typeof key === 'string' ? key.split('.') : [key];
+    TranslateDefaultParser.prototype.getValue = function (target, key) {
+        var /** @type {?} */ keys = key.split('.');
         key = '';
         do {
             key += keys.shift();
@@ -79582,114 +79556,37 @@ var TranslateDefaultParser = /** @class */ (function (_super) {
         return target;
     };
     /**
-     * @private
      * @param {?} fn
      * @param {?=} params
      * @return {?}
      */
-    TranslateDefaultParser.prototype.interpolateFunction = /**
-     * @private
-     * @param {?} fn
-     * @param {?=} params
-     * @return {?}
-     */
-    function (fn, params) {
+    TranslateDefaultParser.prototype.interpolateFunction = function (fn, params) {
         return fn(params);
     };
     /**
-     * @private
      * @param {?} expr
      * @param {?=} params
      * @return {?}
      */
-    TranslateDefaultParser.prototype.interpolateString = /**
-     * @private
-     * @param {?} expr
-     * @param {?=} params
-     * @return {?}
-     */
-    function (expr, params) {
+    TranslateDefaultParser.prototype.interpolateString = function (expr, params) {
         var _this = this;
         if (!params) {
             return expr;
         }
-        return expr.replace(this.templateMatcher, (/**
-         * @param {?} substring
-         * @param {?} b
-         * @return {?}
-         */
-        function (substring, b) {
-            /** @type {?} */
-            var r = _this.getValue(params, b);
+        return expr.replace(this.templateMatcher, function (substring, b) {
+            var /** @type {?} */ r = _this.getValue(params, b);
             return isDefined(r) ? r : substring;
-        }));
+        });
     };
-    TranslateDefaultParser.decorators = [
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"] }
-    ];
     return TranslateDefaultParser;
 }(TranslateParser));
-if (false) {}
+TranslateDefaultParser.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"] },
+];
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @abstract
- */
-var  /**
- * @abstract
- */
-TranslateCompiler = /** @class */ (function () {
-    function TranslateCompiler() {
-    }
-    return TranslateCompiler;
-}());
-if (false) {}
-/**
- * This compiler is just a placeholder that does nothing, in case you don't need a compiler at all
- */
-var TranslateFakeCompiler = /** @class */ (function (_super) {
-    Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__extends"])(TranslateFakeCompiler, _super);
-    function TranslateFakeCompiler() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    /**
-     * @param {?} value
-     * @param {?} lang
-     * @return {?}
-     */
-    TranslateFakeCompiler.prototype.compile = /**
-     * @param {?} value
-     * @param {?} lang
-     * @return {?}
-     */
-    function (value, lang) {
-        return value;
-    };
-    /**
-     * @param {?} translations
-     * @param {?} lang
-     * @return {?}
-     */
-    TranslateFakeCompiler.prototype.compileTranslations = /**
-     * @param {?} translations
-     * @param {?} lang
-     * @return {?}
-     */
-    function (translations, lang) {
-        return translations;
-    };
-    TranslateFakeCompiler.decorators = [
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"] }
-    ];
-    return TranslateFakeCompiler;
-}(TranslateCompiler));
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes} checked by tsc
  */
 var TranslateStore = /** @class */ (function () {
     function TranslateStore() {
@@ -79711,70 +79608,41 @@ var TranslateStore = /** @class */ (function () {
          *     // do something
          * });
          */
-        this.onTranslationChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onTranslationChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         /**
          * An EventEmitter to listen to lang change events
          * onLangChange.subscribe((params: LangChangeEvent) => {
          *     // do something
          * });
          */
-        this.onLangChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onLangChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         /**
          * An EventEmitter to listen to default lang change events
          * onDefaultLangChange.subscribe((params: DefaultLangChangeEvent) => {
          *     // do something
          * });
          */
-        this.onDefaultLangChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onDefaultLangChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
     }
     return TranslateStore;
 }());
-if (false) {}
 
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/** @type {?} */
-var USE_STORE = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('USE_STORE');
-/** @type {?} */
-var USE_DEFAULT_LANG = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('USE_DEFAULT_LANG');
-/** @type {?} */
-var DEFAULT_LANGUAGE = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('DEFAULT_LANGUAGE');
-/** @type {?} */
-var USE_EXTEND = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('USE_EXTEND');
-/**
- * @record
- */
-function TranslationChangeEvent() { }
-if (false) {}
-/**
- * @record
- */
-function LangChangeEvent() { }
-if (false) {}
-/**
- * @record
- */
-function DefaultLangChangeEvent() { }
-if (false) {}
+var /** @type {?} */ USE_STORE = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('USE_STORE');
+var /** @type {?} */ USE_DEFAULT_LANG = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('USE_DEFAULT_LANG');
 var TranslateService = /** @class */ (function () {
     /**
      *
-     * @param store an instance of the store (that is supposed to be unique)
-     * @param currentLoader An instance of the loader currently used
-     * @param compiler An instance of the compiler currently used
-     * @param parser An instance of the parser currently used
-     * @param missingTranslationHandler A handler for missing translations.
-     * @param useDefaultLang whether we should use default language translation when current language translation is missing.
-     * @param isolate whether this service should use the store or not
-     * @param extend To make a child module extend (and use) translations from parent modules.
-     * @param defaultLanguage Set the default language using configuration
+     * @param {?} store an instance of the store (that is supposed to be unique)
+     * @param {?} currentLoader An instance of the loader currently used
+     * @param {?} compiler An instance of the compiler currently used
+     * @param {?} parser An instance of the parser currently used
+     * @param {?} missingTranslationHandler A handler for missing translations.
+     * @param {?=} useDefaultLang whether we should use default language translation when current language translation is missing.
+     * @param {?=} isolate whether this service should use the store or not
      */
-    function TranslateService(store, currentLoader, compiler, parser, missingTranslationHandler, useDefaultLang, isolate, extend, defaultLanguage) {
+    function TranslateService(store, currentLoader, compiler, parser, missingTranslationHandler, useDefaultLang, isolate) {
         if (useDefaultLang === void 0) { useDefaultLang = true; }
         if (isolate === void 0) { isolate = false; }
-        if (extend === void 0) { extend = false; }
         this.store = store;
         this.currentLoader = currentLoader;
         this.compiler = compiler;
@@ -79782,34 +79650,23 @@ var TranslateService = /** @class */ (function () {
         this.missingTranslationHandler = missingTranslationHandler;
         this.useDefaultLang = useDefaultLang;
         this.isolate = isolate;
-        this.extend = extend;
         this.pending = false;
-        this._onTranslationChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        this._onLangChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        this._onDefaultLangChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this._onTranslationChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this._onLangChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this._onDefaultLangChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this._langs = [];
         this._translations = {};
         this._translationRequests = {};
-        /** set the default language from configuration */
-        if (defaultLanguage) {
-            this.setDefaultLang(defaultLanguage);
-        }
     }
     Object.defineProperty(TranslateService.prototype, "onTranslationChange", {
         /**
-         * An EventEmitter to listen to translation change events
-         * onTranslationChange.subscribe((params: TranslationChangeEvent) => {
-           *     // do something
-           * });
-         */
-        get: /**
          * An EventEmitter to listen to translation change events
          * onTranslationChange.subscribe((params: TranslationChangeEvent) => {
          *     // do something
          * });
          * @return {?}
          */
-        function () {
+        get: function () {
             return this.isolate ? this._onTranslationChange : this.store.onTranslationChange;
         },
         enumerable: true,
@@ -79819,17 +79676,11 @@ var TranslateService = /** @class */ (function () {
         /**
          * An EventEmitter to listen to lang change events
          * onLangChange.subscribe((params: LangChangeEvent) => {
-           *     // do something
-           * });
-         */
-        get: /**
-         * An EventEmitter to listen to lang change events
-         * onLangChange.subscribe((params: LangChangeEvent) => {
          *     // do something
          * });
          * @return {?}
          */
-        function () {
+        get: function () {
             return this.isolate ? this._onLangChange : this.store.onLangChange;
         },
         enumerable: true,
@@ -79839,17 +79690,11 @@ var TranslateService = /** @class */ (function () {
         /**
          * An EventEmitter to listen to default lang change events
          * onDefaultLangChange.subscribe((params: DefaultLangChangeEvent) => {
-           *     // do something
-           * });
-         */
-        get: /**
-         * An EventEmitter to listen to default lang change events
-         * onDefaultLangChange.subscribe((params: DefaultLangChangeEvent) => {
          *     // do something
          * });
          * @return {?}
          */
-        function () {
+        get: function () {
             return this.isolate ? this._onDefaultLangChange : this.store.onDefaultLangChange;
         },
         enumerable: true,
@@ -79858,19 +79703,16 @@ var TranslateService = /** @class */ (function () {
     Object.defineProperty(TranslateService.prototype, "defaultLang", {
         /**
          * The default lang to fallback when translations are missing on the current lang
-         */
-        get: /**
-         * The default lang to fallback when translations are missing on the current lang
          * @return {?}
          */
-        function () {
+        get: function () {
             return this.isolate ? this._defaultLang : this.store.defaultLang;
         },
-        set: /**
+        /**
          * @param {?} defaultLang
          * @return {?}
          */
-        function (defaultLang) {
+        set: function (defaultLang) {
             if (this.isolate) {
                 this._defaultLang = defaultLang;
             }
@@ -79884,19 +79726,16 @@ var TranslateService = /** @class */ (function () {
     Object.defineProperty(TranslateService.prototype, "currentLang", {
         /**
          * The lang currently used
-         */
-        get: /**
-         * The lang currently used
          * @return {?}
          */
-        function () {
+        get: function () {
             return this.isolate ? this._currentLang : this.store.currentLang;
         },
-        set: /**
+        /**
          * @param {?} currentLang
          * @return {?}
          */
-        function (currentLang) {
+        set: function (currentLang) {
             if (this.isolate) {
                 this._currentLang = currentLang;
             }
@@ -79910,19 +79749,16 @@ var TranslateService = /** @class */ (function () {
     Object.defineProperty(TranslateService.prototype, "langs", {
         /**
          * an array of langs
-         */
-        get: /**
-         * an array of langs
          * @return {?}
          */
-        function () {
+        get: function () {
             return this.isolate ? this._langs : this.store.langs;
         },
-        set: /**
+        /**
          * @param {?} langs
          * @return {?}
          */
-        function (langs) {
+        set: function (langs) {
             if (this.isolate) {
                 this._langs = langs;
             }
@@ -79936,19 +79772,16 @@ var TranslateService = /** @class */ (function () {
     Object.defineProperty(TranslateService.prototype, "translations", {
         /**
          * a list of translations per lang
-         */
-        get: /**
-         * a list of translations per lang
          * @return {?}
          */
-        function () {
+        get: function () {
             return this.isolate ? this._translations : this.store.translations;
         },
-        set: /**
+        /**
          * @param {?} translations
          * @return {?}
          */
-        function (translations) {
+        set: function (translations) {
             if (this.isolate) {
                 this._translations = translations;
             }
@@ -79961,117 +79794,75 @@ var TranslateService = /** @class */ (function () {
     });
     /**
      * Sets the default language to use as a fallback
-     */
-    /**
-     * Sets the default language to use as a fallback
      * @param {?} lang
      * @return {?}
      */
-    TranslateService.prototype.setDefaultLang = /**
-     * Sets the default language to use as a fallback
-     * @param {?} lang
-     * @return {?}
-     */
-    function (lang) {
+    TranslateService.prototype.setDefaultLang = function (lang) {
         var _this = this;
         if (lang === this.defaultLang) {
             return;
         }
-        /** @type {?} */
-        var pending = this.retrieveTranslations(lang);
+        var /** @type {?} */ pending = this.retrieveTranslations(lang);
         if (typeof pending !== "undefined") {
             // on init set the defaultLang immediately
-            if (this.defaultLang == null) {
+            if (!this.defaultLang) {
                 this.defaultLang = lang;
             }
             pending.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(1))
-                .subscribe((/**
-             * @param {?} res
-             * @return {?}
-             */
-            function (res) {
+                .subscribe(function (res) {
                 _this.changeDefaultLang(lang);
-            }));
+            });
         }
-        else { // we already have this language
+        else {
+            // we already have this language
             this.changeDefaultLang(lang);
         }
     };
     /**
      * Gets the default language used
-     */
-    /**
-     * Gets the default language used
      * @return {?}
      */
-    TranslateService.prototype.getDefaultLang = /**
-     * Gets the default language used
-     * @return {?}
-     */
-    function () {
+    TranslateService.prototype.getDefaultLang = function () {
         return this.defaultLang;
     };
     /**
      * Changes the lang currently used
-     */
-    /**
-     * Changes the lang currently used
      * @param {?} lang
      * @return {?}
      */
-    TranslateService.prototype.use = /**
-     * Changes the lang currently used
-     * @param {?} lang
-     * @return {?}
-     */
-    function (lang) {
+    TranslateService.prototype.use = function (lang) {
         var _this = this;
         // don't change the language if the language given is already selected
         if (lang === this.currentLang) {
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(this.translations[lang]);
         }
-        /** @type {?} */
-        var pending = this.retrieveTranslations(lang);
+        var /** @type {?} */ pending = this.retrieveTranslations(lang);
         if (typeof pending !== "undefined") {
             // on init set the currentLang immediately
             if (!this.currentLang) {
                 this.currentLang = lang;
             }
             pending.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(1))
-                .subscribe((/**
-             * @param {?} res
-             * @return {?}
-             */
-            function (res) {
+                .subscribe(function (res) {
                 _this.changeLang(lang);
-            }));
+            });
             return pending;
         }
-        else { // we have this language, return an Observable
+        else {
+            // we have this language, return an Observable
             this.changeLang(lang);
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(this.translations[lang]);
         }
     };
     /**
      * Retrieves the given translations
-     */
-    /**
-     * Retrieves the given translations
-     * @private
      * @param {?} lang
      * @return {?}
      */
-    TranslateService.prototype.retrieveTranslations = /**
-     * Retrieves the given translations
-     * @private
-     * @param {?} lang
-     * @return {?}
-     */
-    function (lang) {
-        /** @type {?} */
-        var pending;
-        // if this language is unavailable or extend is true, ask for it
-        if (typeof this.translations[lang] === "undefined" || this.extend) {
+    TranslateService.prototype.retrieveTranslations = function (lang) {
+        var /** @type {?} */ pending;
+        // if this language is unavailable, ask for it
+        if (typeof this.translations[lang] === "undefined") {
             this._translationRequests[lang] = this._translationRequests[lang] || this.getTranslation(lang);
             pending = this._translationRequests[lang];
         }
@@ -80080,74 +79871,35 @@ var TranslateService = /** @class */ (function () {
     /**
      * Gets an object of translations for a given language with the current loader
      * and passes it through the compiler
-     */
-    /**
-     * Gets an object of translations for a given language with the current loader
-     * and passes it through the compiler
      * @param {?} lang
      * @return {?}
      */
-    TranslateService.prototype.getTranslation = /**
-     * Gets an object of translations for a given language with the current loader
-     * and passes it through the compiler
-     * @param {?} lang
-     * @return {?}
-     */
-    function (lang) {
+    TranslateService.prototype.getTranslation = function (lang) {
         var _this = this;
         this.pending = true;
-        /** @type {?} */
-        var loadingTranslations = this.currentLoader.getTranslation(lang).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["shareReplay"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(1));
-        this.loadingTranslations = loadingTranslations.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])((/**
-         * @param {?} res
-         * @return {?}
-         */
-        function (res) { return _this.compiler.compileTranslations(res, lang); })), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["shareReplay"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(1));
-        this.loadingTranslations
-            .subscribe({
-            next: (/**
-             * @param {?} res
-             * @return {?}
-             */
-            function (res) {
-                _this.translations[lang] = _this.extend && _this.translations[lang] ? Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__assign"])(Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__assign"])({}, res), _this.translations[lang]) : res;
-                _this.updateLangs();
-                _this.pending = false;
-            }),
-            error: (/**
-             * @param {?} err
-             * @return {?}
-             */
-            function (err) {
-                _this.pending = false;
-            })
+        this.loadingTranslations = this.currentLoader.getTranslation(lang).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["share"])());
+        this.loadingTranslations.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(1))
+            .subscribe(function (res) {
+            _this.translations[lang] = _this.compiler.compileTranslations(res, lang);
+            _this.updateLangs();
+            _this.pending = false;
+        }, function (err) {
+            _this.pending = false;
         });
-        return loadingTranslations;
+        return this.loadingTranslations;
     };
     /**
      * Manually sets an object of translations for a given language
      * after passing it through the compiler
-     */
-    /**
-     * Manually sets an object of translations for a given language
-     * after passing it through the compiler
      * @param {?} lang
      * @param {?} translations
      * @param {?=} shouldMerge
      * @return {?}
      */
-    TranslateService.prototype.setTranslation = /**
-     * Manually sets an object of translations for a given language
-     * after passing it through the compiler
-     * @param {?} lang
-     * @param {?} translations
-     * @param {?=} shouldMerge
-     * @return {?}
-     */
-    function (lang, translations, shouldMerge) {
+    TranslateService.prototype.setTranslation = function (lang, translations, shouldMerge) {
         if (shouldMerge === void 0) { shouldMerge = false; }
         translations = this.compiler.compileTranslations(translations, lang);
-        if ((shouldMerge || this.extend) && this.translations[lang]) {
+        if (shouldMerge && this.translations[lang]) {
             this.translations[lang] = mergeDeep(this.translations[lang], translations);
         }
         else {
@@ -80158,90 +79910,47 @@ var TranslateService = /** @class */ (function () {
     };
     /**
      * Returns an array of currently available langs
-     */
-    /**
-     * Returns an array of currently available langs
      * @return {?}
      */
-    TranslateService.prototype.getLangs = /**
-     * Returns an array of currently available langs
-     * @return {?}
-     */
-    function () {
+    TranslateService.prototype.getLangs = function () {
         return this.langs;
     };
     /**
      * Add available langs
-     */
-    /**
-     * Add available langs
      * @param {?} langs
      * @return {?}
      */
-    TranslateService.prototype.addLangs = /**
-     * Add available langs
-     * @param {?} langs
-     * @return {?}
-     */
-    function (langs) {
+    TranslateService.prototype.addLangs = function (langs) {
         var _this = this;
-        langs.forEach((/**
-         * @param {?} lang
-         * @return {?}
-         */
-        function (lang) {
+        langs.forEach(function (lang) {
             if (_this.langs.indexOf(lang) === -1) {
                 _this.langs.push(lang);
             }
-        }));
+        });
     };
     /**
      * Update the list of available langs
-     */
-    /**
-     * Update the list of available langs
-     * @private
      * @return {?}
      */
-    TranslateService.prototype.updateLangs = /**
-     * Update the list of available langs
-     * @private
-     * @return {?}
-     */
-    function () {
+    TranslateService.prototype.updateLangs = function () {
         this.addLangs(Object.keys(this.translations));
     };
     /**
      * Returns the parsed result of the translations
-     */
-    /**
-     * Returns the parsed result of the translations
      * @param {?} translations
      * @param {?} key
      * @param {?=} interpolateParams
      * @return {?}
      */
-    TranslateService.prototype.getParsedResult = /**
-     * Returns the parsed result of the translations
-     * @param {?} translations
-     * @param {?} key
-     * @param {?=} interpolateParams
-     * @return {?}
-     */
-    function (translations, key, interpolateParams) {
-        var e_1, _a;
-        /** @type {?} */
-        var res;
+    TranslateService.prototype.getParsedResult = function (translations, key, interpolateParams) {
+        var /** @type {?} */ res;
         if (key instanceof Array) {
-            /** @type {?} */
-            var result_1 = {};
-            /** @type {?} */
-            var observables = false;
+            var /** @type {?} */ result = {}, /** @type {?} */ observables = false;
             try {
-                for (var key_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__values"])(key), key_1_1 = key_1.next(); !key_1_1.done; key_1_1 = key_1.next()) {
+                for (var key_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__values"])(key), key_1_1 = key_1.next(); !key_1_1.done; key_1_1 = key_1.next()) {
                     var k = key_1_1.value;
-                    result_1[k] = this.getParsedResult(translations, k, interpolateParams);
-                    if (Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["isObservable"])(result_1[k])) {
+                    result[k] = this.getParsedResult(translations, k, interpolateParams);
+                    if (typeof result[k].subscribe === "function") {
                         observables = true;
                     }
                 }
@@ -80254,201 +79963,134 @@ var TranslateService = /** @class */ (function () {
                 finally { if (e_1) throw e_1.error; }
             }
             if (observables) {
-                /** @type {?} */
-                var sources = key.map((/**
-                 * @param {?} k
-                 * @return {?}
-                 */
-                function (k) { return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["isObservable"])(result_1[k]) ? result_1[k] : Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])((/** @type {?} */ (result_1[k]))); }));
-                return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["forkJoin"])(sources).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])((/**
-                 * @param {?} arr
-                 * @return {?}
-                 */
-                function (arr) {
-                    /** @type {?} */
-                    var obj = {};
-                    arr.forEach((/**
-                     * @param {?} value
-                     * @param {?} index
-                     * @return {?}
-                     */
-                    function (value, index) {
+                var /** @type {?} */ mergedObs = void 0;
+                try {
+                    for (var key_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__values"])(key), key_2_1 = key_2.next(); !key_2_1.done; key_2_1 = key_2.next()) {
+                        var k = key_2_1.value;
+                        var /** @type {?} */ obs = typeof result[k].subscribe === "function" ? result[k] : Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(/** @type {?} */ (result[k]));
+                        if (typeof mergedObs === "undefined") {
+                            mergedObs = obs;
+                        }
+                        else {
+                            mergedObs = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["merge"])(mergedObs, obs);
+                        }
+                    }
+                }
+                catch (e_2_1) { e_2 = { error: e_2_1 }; }
+                finally {
+                    try {
+                        if (key_2_1 && !key_2_1.done && (_b = key_2.return)) _b.call(key_2);
+                    }
+                    finally { if (e_2) throw e_2.error; }
+                }
+                return mergedObs.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["toArray"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (arr) {
+                    var /** @type {?} */ obj = {};
+                    arr.forEach(function (value, index) {
                         obj[key[index]] = value;
-                    }));
+                    });
                     return obj;
-                })));
+                }));
             }
-            return result_1;
+            return result;
         }
         if (translations) {
             res = this.parser.interpolate(this.parser.getValue(translations, key), interpolateParams);
         }
-        if (typeof res === "undefined" && this.defaultLang != null && this.defaultLang !== this.currentLang && this.useDefaultLang) {
+        if (typeof res === "undefined" && this.defaultLang && this.defaultLang !== this.currentLang && this.useDefaultLang) {
             res = this.parser.interpolate(this.parser.getValue(this.translations[this.defaultLang], key), interpolateParams);
         }
         if (typeof res === "undefined") {
-            /** @type {?} */
-            var params = { key: key, translateService: this };
+            var /** @type {?} */ params = { key: key, translateService: this };
             if (typeof interpolateParams !== 'undefined') {
                 params.interpolateParams = interpolateParams;
             }
             res = this.missingTranslationHandler.handle(params);
         }
         return typeof res !== "undefined" ? res : key;
+        var e_1, _a, e_2, _b;
     };
     /**
      * Gets the translated value of a key (or an array of keys)
-     * @returns the translated key, or an object of translated keys
-     */
-    /**
-     * Gets the translated value of a key (or an array of keys)
      * @param {?} key
      * @param {?=} interpolateParams
      * @return {?} the translated key, or an object of translated keys
      */
-    TranslateService.prototype.get = /**
-     * Gets the translated value of a key (or an array of keys)
-     * @param {?} key
-     * @param {?=} interpolateParams
-     * @return {?} the translated key, or an object of translated keys
-     */
-    function (key, interpolateParams) {
+    TranslateService.prototype.get = function (key, interpolateParams) {
         var _this = this;
         if (!isDefined(key) || !key.length) {
             throw new Error("Parameter \"key\" required");
         }
         // check if we are loading a new translation to use
         if (this.pending) {
-            return this.loadingTranslations.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["concatMap"])((/**
-             * @param {?} res
-             * @return {?}
-             */
-            function (res) {
-                res = _this.getParsedResult(res, key, interpolateParams);
-                return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["isObservable"])(res) ? res : Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(res);
-            })));
+            return rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].create(function (observer) {
+                var /** @type {?} */ onComplete = function (res) {
+                    observer.next(res);
+                    observer.complete();
+                };
+                var /** @type {?} */ onError = function (err) {
+                    observer.error(err);
+                };
+                _this.loadingTranslations.subscribe(function (res) {
+                    res = _this.getParsedResult(_this.compiler.compileTranslations(res, _this.currentLang), key, interpolateParams);
+                    if (typeof res.subscribe === "function") {
+                        res.subscribe(onComplete, onError);
+                    }
+                    else {
+                        onComplete(res);
+                    }
+                }, onError);
+            });
         }
         else {
-            /** @type {?} */
-            var res = this.getParsedResult(this.translations[this.currentLang], key, interpolateParams);
-            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["isObservable"])(res) ? res : Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(res);
-        }
-    };
-    /**
-     * Returns a stream of translated values of a key (or an array of keys) which updates
-     * whenever the translation changes.
-     * @returns A stream of the translated key, or an object of translated keys
-     */
-    /**
-     * Returns a stream of translated values of a key (or an array of keys) which updates
-     * whenever the translation changes.
-     * @param {?} key
-     * @param {?=} interpolateParams
-     * @return {?} A stream of the translated key, or an object of translated keys
-     */
-    TranslateService.prototype.getStreamOnTranslationChange = /**
-     * Returns a stream of translated values of a key (or an array of keys) which updates
-     * whenever the translation changes.
-     * @param {?} key
-     * @param {?=} interpolateParams
-     * @return {?} A stream of the translated key, or an object of translated keys
-     */
-    function (key, interpolateParams) {
-        var _this = this;
-        if (!isDefined(key) || !key.length) {
-            throw new Error("Parameter \"key\" required");
-        }
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["concat"])(Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["defer"])((/**
-         * @return {?}
-         */
-        function () { return _this.get(key, interpolateParams); })), this.onTranslationChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])((/**
-         * @param {?} event
-         * @return {?}
-         */
-        function (event) {
-            /** @type {?} */
-            var res = _this.getParsedResult(event.translations, key, interpolateParams);
-            if (typeof res.subscribe === 'function') {
+            var /** @type {?} */ res = this.getParsedResult(this.translations[this.currentLang], key, interpolateParams);
+            if (typeof res.subscribe === "function") {
                 return res;
             }
             else {
                 return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(res);
             }
-        }))));
+        }
     };
     /**
      * Returns a stream of translated values of a key (or an array of keys) which updates
      * whenever the language changes.
-     * @returns A stream of the translated key, or an object of translated keys
-     */
-    /**
-     * Returns a stream of translated values of a key (or an array of keys) which updates
-     * whenever the language changes.
      * @param {?} key
      * @param {?=} interpolateParams
      * @return {?} A stream of the translated key, or an object of translated keys
      */
-    TranslateService.prototype.stream = /**
-     * Returns a stream of translated values of a key (or an array of keys) which updates
-     * whenever the language changes.
-     * @param {?} key
-     * @param {?=} interpolateParams
-     * @return {?} A stream of the translated key, or an object of translated keys
-     */
-    function (key, interpolateParams) {
+    TranslateService.prototype.stream = function (key, interpolateParams) {
         var _this = this;
         if (!isDefined(key) || !key.length) {
             throw new Error("Parameter \"key\" required");
         }
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["concat"])(Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["defer"])((/**
-         * @return {?}
-         */
-        function () { return _this.get(key, interpolateParams); })), this.onLangChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])((/**
-         * @param {?} event
-         * @return {?}
-         */
-        function (event) {
-            /** @type {?} */
-            var res = _this.getParsedResult(event.translations, key, interpolateParams);
-            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["isObservable"])(res) ? res : Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(res);
-        }))));
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["concat"])(this.get(key, interpolateParams), this.onLangChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])(function (event) {
+            var /** @type {?} */ res = _this.getParsedResult(event.translations, key, interpolateParams);
+            if (typeof res.subscribe === "function") {
+                return res;
+            }
+            else {
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(res);
+            }
+        })));
     };
     /**
      * Returns a translation instantly from the internal state of loaded translation.
      * All rules regarding the current language, the preferred language of even fallback languages will be used except any promise handling.
-     */
-    /**
-     * Returns a translation instantly from the internal state of loaded translation.
-     * All rules regarding the current language, the preferred language of even fallback languages will be used except any promise handling.
      * @param {?} key
      * @param {?=} interpolateParams
      * @return {?}
      */
-    TranslateService.prototype.instant = /**
-     * Returns a translation instantly from the internal state of loaded translation.
-     * All rules regarding the current language, the preferred language of even fallback languages will be used except any promise handling.
-     * @param {?} key
-     * @param {?=} interpolateParams
-     * @return {?}
-     */
-    function (key, interpolateParams) {
+    TranslateService.prototype.instant = function (key, interpolateParams) {
         if (!isDefined(key) || !key.length) {
             throw new Error("Parameter \"key\" required");
         }
-        /** @type {?} */
-        var res = this.getParsedResult(this.translations[this.currentLang], key, interpolateParams);
-        if (Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["isObservable"])(res)) {
+        var /** @type {?} */ res = this.getParsedResult(this.translations[this.currentLang], key, interpolateParams);
+        if (typeof res.subscribe !== "undefined") {
             if (key instanceof Array) {
-                /** @type {?} */
-                var obj_1 = {};
-                key.forEach((/**
-                 * @param {?} value
-                 * @param {?} index
-                 * @return {?}
-                 */
-                function (value, index) {
+                var /** @type {?} */ obj_1 = {};
+                key.forEach(function (value, index) {
                     obj_1[key[index]] = key[index];
-                }));
+                });
                 return obj_1;
             }
             return key;
@@ -80459,22 +80101,12 @@ var TranslateService = /** @class */ (function () {
     };
     /**
      * Sets the translated value of a key, after compiling it
-     */
-    /**
-     * Sets the translated value of a key, after compiling it
      * @param {?} key
      * @param {?} value
      * @param {?=} lang
      * @return {?}
      */
-    TranslateService.prototype.set = /**
-     * Sets the translated value of a key, after compiling it
-     * @param {?} key
-     * @param {?} value
-     * @param {?=} lang
-     * @return {?}
-     */
-    function (key, value, lang) {
+    TranslateService.prototype.set = function (key, value, lang) {
         if (lang === void 0) { lang = this.currentLang; }
         this.translations[lang][key] = this.compiler.compile(value, lang);
         this.updateLangs();
@@ -80482,101 +80114,54 @@ var TranslateService = /** @class */ (function () {
     };
     /**
      * Changes the current lang
-     */
-    /**
-     * Changes the current lang
-     * @private
      * @param {?} lang
      * @return {?}
      */
-    TranslateService.prototype.changeLang = /**
-     * Changes the current lang
-     * @private
-     * @param {?} lang
-     * @return {?}
-     */
-    function (lang) {
+    TranslateService.prototype.changeLang = function (lang) {
         this.currentLang = lang;
         this.onLangChange.emit({ lang: lang, translations: this.translations[lang] });
         // if there is no default lang, use the one that we just set
-        if (this.defaultLang == null) {
+        if (!this.defaultLang) {
             this.changeDefaultLang(lang);
         }
     };
     /**
      * Changes the default lang
-     */
-    /**
-     * Changes the default lang
-     * @private
      * @param {?} lang
      * @return {?}
      */
-    TranslateService.prototype.changeDefaultLang = /**
-     * Changes the default lang
-     * @private
-     * @param {?} lang
-     * @return {?}
-     */
-    function (lang) {
+    TranslateService.prototype.changeDefaultLang = function (lang) {
         this.defaultLang = lang;
         this.onDefaultLangChange.emit({ lang: lang, translations: this.translations[lang] });
     };
     /**
      * Allows to reload the lang file from the file
-     */
-    /**
-     * Allows to reload the lang file from the file
      * @param {?} lang
      * @return {?}
      */
-    TranslateService.prototype.reloadLang = /**
-     * Allows to reload the lang file from the file
-     * @param {?} lang
-     * @return {?}
-     */
-    function (lang) {
+    TranslateService.prototype.reloadLang = function (lang) {
         this.resetLang(lang);
         return this.getTranslation(lang);
     };
     /**
      * Deletes inner translation
-     */
-    /**
-     * Deletes inner translation
      * @param {?} lang
      * @return {?}
      */
-    TranslateService.prototype.resetLang = /**
-     * Deletes inner translation
-     * @param {?} lang
-     * @return {?}
-     */
-    function (lang) {
+    TranslateService.prototype.resetLang = function (lang) {
         this._translationRequests[lang] = undefined;
         this.translations[lang] = undefined;
     };
     /**
      * Returns the language code name from the browser, e.g. "de"
-     */
-    /**
-     * Returns the language code name from the browser, e.g. "de"
      * @return {?}
      */
-    TranslateService.prototype.getBrowserLang = /**
-     * Returns the language code name from the browser, e.g. "de"
-     * @return {?}
-     */
-    function () {
+    TranslateService.prototype.getBrowserLang = function () {
         if (typeof window === 'undefined' || typeof window.navigator === 'undefined') {
             return undefined;
         }
-        /** @type {?} */
-        var browserLang = window.navigator.languages ? window.navigator.languages[0] : null;
+        var /** @type {?} */ browserLang = window.navigator.languages ? window.navigator.languages[0] : null;
         browserLang = browserLang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
-        if (typeof browserLang === 'undefined') {
-            return undefined;
-        }
         if (browserLang.indexOf('-') !== -1) {
             browserLang = browserLang.split('-')[0];
         }
@@ -80587,48 +80172,42 @@ var TranslateService = /** @class */ (function () {
     };
     /**
      * Returns the culture language code name from the browser, e.g. "de-DE"
-     */
-    /**
-     * Returns the culture language code name from the browser, e.g. "de-DE"
      * @return {?}
      */
-    TranslateService.prototype.getBrowserCultureLang = /**
-     * Returns the culture language code name from the browser, e.g. "de-DE"
-     * @return {?}
-     */
-    function () {
+    TranslateService.prototype.getBrowserCultureLang = function () {
         if (typeof window === 'undefined' || typeof window.navigator === 'undefined') {
             return undefined;
         }
-        /** @type {?} */
-        var browserCultureLang = window.navigator.languages ? window.navigator.languages[0] : null;
+        var /** @type {?} */ browserCultureLang = window.navigator.languages ? window.navigator.languages[0] : null;
         browserCultureLang = browserCultureLang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
         return browserCultureLang;
     };
-    TranslateService.decorators = [
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"] }
-    ];
-    /** @nocollapse */
-    TranslateService.ctorParameters = function () { return [
-        { type: TranslateStore },
-        { type: TranslateLoader },
-        { type: TranslateCompiler },
-        { type: TranslateParser },
-        { type: MissingTranslationHandler },
-        { type: Boolean, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [USE_DEFAULT_LANG,] }] },
-        { type: Boolean, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [USE_STORE,] }] },
-        { type: Boolean, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [USE_EXTEND,] }] },
-        { type: String, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [DEFAULT_LANGUAGE,] }] }
-    ]; };
     return TranslateService;
 }());
-if (false) {}
+TranslateService.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"] },
+];
+/** @nocollapse */
+TranslateService.ctorParameters = function () { return [
+    { type: TranslateStore, },
+    { type: TranslateLoader, },
+    { type: TranslateCompiler, },
+    { type: TranslateParser, },
+    { type: MissingTranslationHandler, },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [USE_DEFAULT_LANG,] },] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [USE_STORE,] },] },
+]; };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes} checked by tsc
  */
 var TranslateDirective = /** @class */ (function () {
+    /**
+     * @param {?} translateService
+     * @param {?} element
+     * @param {?} _ref
+     */
     function TranslateDirective(translateService, element, _ref) {
         var _this = this;
         this.translateService = translateService;
@@ -80636,43 +80215,31 @@ var TranslateDirective = /** @class */ (function () {
         this._ref = _ref;
         // subscribe to onTranslationChange event, in case the translations of the current lang change
         if (!this.onTranslationChangeSub) {
-            this.onTranslationChangeSub = this.translateService.onTranslationChange.subscribe((/**
-             * @param {?} event
-             * @return {?}
-             */
-            function (event) {
+            this.onTranslationChangeSub = this.translateService.onTranslationChange.subscribe(function (event) {
                 if (event.lang === _this.translateService.currentLang) {
                     _this.checkNodes(true, event.translations);
                 }
-            }));
+            });
         }
         // subscribe to onLangChange event, in case the language changes
         if (!this.onLangChangeSub) {
-            this.onLangChangeSub = this.translateService.onLangChange.subscribe((/**
-             * @param {?} event
-             * @return {?}
-             */
-            function (event) {
+            this.onLangChangeSub = this.translateService.onLangChange.subscribe(function (event) {
                 _this.checkNodes(true, event.translations);
-            }));
+            });
         }
         // subscribe to onDefaultLangChange event, in case the default language changes
         if (!this.onDefaultLangChangeSub) {
-            this.onDefaultLangChangeSub = this.translateService.onDefaultLangChange.subscribe((/**
-             * @param {?} event
-             * @return {?}
-             */
-            function (event) {
+            this.onDefaultLangChangeSub = this.translateService.onDefaultLangChange.subscribe(function (event) {
                 _this.checkNodes(true);
-            }));
+            });
         }
     }
     Object.defineProperty(TranslateDirective.prototype, "translate", {
-        set: /**
+        /**
          * @param {?} key
          * @return {?}
          */
-        function (key) {
+        set: function (key) {
             if (key) {
                 this.key = key;
                 this.checkNodes();
@@ -80682,11 +80249,11 @@ var TranslateDirective = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(TranslateDirective.prototype, "translateParams", {
-        set: /**
+        /**
          * @param {?} params
          * @return {?}
          */
-        function (params) {
+        set: function (params) {
             if (!equals(this.currentParams, params)) {
                 this.currentParams = params;
                 this.checkNodes(true);
@@ -80698,10 +80265,7 @@ var TranslateDirective = /** @class */ (function () {
     /**
      * @return {?}
      */
-    TranslateDirective.prototype.ngAfterViewChecked = /**
-     * @return {?}
-     */
-    function () {
+    TranslateDirective.prototype.ngAfterViewChecked = function () {
         this.checkNodes();
     };
     /**
@@ -80709,59 +80273,41 @@ var TranslateDirective = /** @class */ (function () {
      * @param {?=} translations
      * @return {?}
      */
-    TranslateDirective.prototype.checkNodes = /**
-     * @param {?=} forceUpdate
-     * @param {?=} translations
-     * @return {?}
-     */
-    function (forceUpdate, translations) {
+    TranslateDirective.prototype.checkNodes = function (forceUpdate, translations) {
         if (forceUpdate === void 0) { forceUpdate = false; }
-        /** @type {?} */
-        var nodes = this.element.nativeElement.childNodes;
+        var /** @type {?} */ nodes = this.element.nativeElement.childNodes;
         // if the element is empty
         if (!nodes.length) {
             // we add the key as content
             this.setContent(this.element.nativeElement, this.key);
             nodes = this.element.nativeElement.childNodes;
         }
-        for (var i = 0; i < nodes.length; ++i) {
-            /** @type {?} */
-            var node = nodes[i];
-            if (node.nodeType === 3) { // node type 3 is a text node
+        for (var /** @type {?} */ i = 0; i < nodes.length; ++i) {
+            var /** @type {?} */ node = nodes[i];
+            if (node.nodeType === 3) {
                 // node type 3 is a text node
-                /** @type {?} */
-                var key = void 0;
-                if (forceUpdate) {
-                    node.lastKey = null;
-                }
-                if (isDefined(node.lookupKey)) {
-                    key = node.lookupKey;
-                }
-                else if (this.key) {
+                var /** @type {?} */ key = void 0;
+                if (this.key) {
                     key = this.key;
+                    if (forceUpdate) {
+                        node.lastKey = null;
+                    }
                 }
                 else {
-                    /** @type {?} */
-                    var content = this.getContent(node);
-                    /** @type {?} */
-                    var trimmedContent = content.trim();
+                    var /** @type {?} */ content = this.getContent(node);
+                    var /** @type {?} */ trimmedContent = content.trim();
                     if (trimmedContent.length) {
-                        node.lookupKey = trimmedContent;
                         // we want to use the content as a key, not the translation value
                         if (content !== node.currentValue) {
                             key = trimmedContent;
                             // the content was changed from the user, we'll use it as a reference if needed
-                            node.originalContent = content || node.originalContent;
+                            node.originalContent = this.getContent(node);
                         }
-                        else if (node.originalContent) { // the content seems ok, but the lang has changed
+                        else if (node.originalContent && forceUpdate) {
+                            // the content seems ok, but the lang has changed
+                            node.lastKey = null;
                             // the current content is the translation, not the key, use the last real content as key
                             key = node.originalContent.trim();
-                        }
-                        else if (content !== node.currentValue) {
-                            // we want to use the content as a key, not the translation value
-                            key = trimmedContent;
-                            // the content was changed from the user, we'll use it as a reference if needed
-                            node.originalContent = content || node.originalContent;
                         }
                     }
                 }
@@ -80775,25 +80321,14 @@ var TranslateDirective = /** @class */ (function () {
      * @param {?} translations
      * @return {?}
      */
-    TranslateDirective.prototype.updateValue = /**
-     * @param {?} key
-     * @param {?} node
-     * @param {?} translations
-     * @return {?}
-     */
-    function (key, node, translations) {
+    TranslateDirective.prototype.updateValue = function (key, node, translations) {
         var _this = this;
         if (key) {
             if (node.lastKey === key && this.lastParams === this.currentParams) {
                 return;
             }
             this.lastParams = this.currentParams;
-            /** @type {?} */
-            var onTranslation = (/**
-             * @param {?} res
-             * @return {?}
-             */
-            function (res) {
+            var /** @type {?} */ onTranslation = function (res) {
                 if (res !== key) {
                     node.lastKey = key;
                 }
@@ -80804,11 +80339,10 @@ var TranslateDirective = /** @class */ (function () {
                 // we replace in the original content to preserve spaces that we might have trimmed
                 _this.setContent(node, _this.key ? node.currentValue : node.originalContent.replace(key, node.currentValue));
                 _this._ref.markForCheck();
-            });
+            };
             if (isDefined(translations)) {
-                /** @type {?} */
-                var res = this.translateService.getParsedResult(translations, key, this.currentParams);
-                if (Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["isObservable"])(res)) {
+                var /** @type {?} */ res = this.translateService.getParsedResult(translations, key, this.currentParams);
+                if (typeof res.subscribe === "function") {
                     res.subscribe(onTranslation);
                 }
                 else {
@@ -80824,11 +80358,7 @@ var TranslateDirective = /** @class */ (function () {
      * @param {?} node
      * @return {?}
      */
-    TranslateDirective.prototype.getContent = /**
-     * @param {?} node
-     * @return {?}
-     */
-    function (node) {
+    TranslateDirective.prototype.getContent = function (node) {
         return isDefined(node.textContent) ? node.textContent : node.data;
     };
     /**
@@ -80836,12 +80366,7 @@ var TranslateDirective = /** @class */ (function () {
      * @param {?} content
      * @return {?}
      */
-    TranslateDirective.prototype.setContent = /**
-     * @param {?} node
-     * @param {?} content
-     * @return {?}
-     */
-    function (node, content) {
+    TranslateDirective.prototype.setContent = function (node, content) {
         if (isDefined(node.textContent)) {
             node.textContent = content;
         }
@@ -80852,10 +80377,7 @@ var TranslateDirective = /** @class */ (function () {
     /**
      * @return {?}
      */
-    TranslateDirective.prototype.ngOnDestroy = /**
-     * @return {?}
-     */
-    function () {
+    TranslateDirective.prototype.ngOnDestroy = function () {
         if (this.onLangChangeSub) {
             this.onLangChangeSub.unsubscribe();
         }
@@ -80866,30 +80388,33 @@ var TranslateDirective = /** @class */ (function () {
             this.onTranslationChangeSub.unsubscribe();
         }
     };
-    TranslateDirective.decorators = [
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"], args: [{
-                    selector: '[translate],[ngx-translate]'
-                },] }
-    ];
-    /** @nocollapse */
-    TranslateDirective.ctorParameters = function () { return [
-        { type: TranslateService },
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
-    ]; };
-    TranslateDirective.propDecorators = {
-        translate: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
-        translateParams: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }]
-    };
     return TranslateDirective;
 }());
-if (false) {}
+TranslateDirective.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                selector: '[translate],[ngx-translate]'
+            },] },
+];
+/** @nocollapse */
+TranslateDirective.ctorParameters = function () { return [
+    { type: TranslateService, },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"], },
+]; };
+TranslateDirective.propDecorators = {
+    "translate": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+    "translateParams": [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] },],
+};
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes} checked by tsc
  */
 var TranslatePipe = /** @class */ (function () {
+    /**
+     * @param {?} translate
+     * @param {?} _ref
+     */
     function TranslatePipe(translate, _ref) {
         this.translate = translate;
         this._ref = _ref;
@@ -80901,28 +80426,16 @@ var TranslatePipe = /** @class */ (function () {
      * @param {?=} translations
      * @return {?}
      */
-    TranslatePipe.prototype.updateValue = /**
-     * @param {?} key
-     * @param {?=} interpolateParams
-     * @param {?=} translations
-     * @return {?}
-     */
-    function (key, interpolateParams, translations) {
+    TranslatePipe.prototype.updateValue = function (key, interpolateParams, translations) {
         var _this = this;
-        /** @type {?} */
-        var onTranslation = (/**
-         * @param {?} res
-         * @return {?}
-         */
-        function (res) {
+        var /** @type {?} */ onTranslation = function (res) {
             _this.value = res !== undefined ? res : key;
             _this.lastKey = key;
             _this._ref.markForCheck();
-        });
+        };
         if (translations) {
-            /** @type {?} */
-            var res = this.translate.getParsedResult(translations, key, interpolateParams);
-            if (Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["isObservable"])(res.subscribe)) {
+            var /** @type {?} */ res = this.translate.getParsedResult(translations, key, interpolateParams);
+            if (typeof res.subscribe === 'function') {
                 res.subscribe(onTranslation);
             }
             else {
@@ -80936,32 +80449,25 @@ var TranslatePipe = /** @class */ (function () {
      * @param {...?} args
      * @return {?}
      */
-    TranslatePipe.prototype.transform = /**
-     * @param {?} query
-     * @param {...?} args
-     * @return {?}
-     */
-    function (query) {
+    TranslatePipe.prototype.transform = function (query) {
         var _this = this;
         var args = [];
         for (var _i = 1; _i < arguments.length; _i++) {
             args[_i - 1] = arguments[_i];
         }
-        if (!query || !query.length) {
+        if (!query || query.length === 0) {
             return query;
         }
         // if we ask another time for the same key, return the last value
         if (equals(query, this.lastKey) && equals(args, this.lastParams)) {
             return this.value;
         }
-        /** @type {?} */
-        var interpolateParams;
+        var /** @type {?} */ interpolateParams;
         if (isDefined(args[0]) && args.length) {
             if (typeof args[0] === 'string' && args[0].length) {
                 // we accept objects written in the template such as {n:1}, {'n':1}, {n:'v'}
                 // which is why we might need to change it to real JSON objects such as {"n":1} or {"n":"v"}
-                /** @type {?} */
-                var validArgs = args[0]
+                var /** @type {?} */ validArgs = args[0]
                     .replace(/(\')?([a-zA-Z0-9_]+)(\')?(\s)?:/g, '"$2":')
                     .replace(/:(\s)?(\')(.*?)(\')/g, ':"$3"');
                 try {
@@ -80985,58 +80491,38 @@ var TranslatePipe = /** @class */ (function () {
         this._dispose();
         // subscribe to onTranslationChange event, in case the translations change
         if (!this.onTranslationChange) {
-            this.onTranslationChange = this.translate.onTranslationChange.subscribe((/**
-             * @param {?} event
-             * @return {?}
-             */
-            function (event) {
+            this.onTranslationChange = this.translate.onTranslationChange.subscribe(function (event) {
                 if (_this.lastKey && event.lang === _this.translate.currentLang) {
                     _this.lastKey = null;
                     _this.updateValue(query, interpolateParams, event.translations);
                 }
-            }));
+            });
         }
         // subscribe to onLangChange event, in case the language changes
         if (!this.onLangChange) {
-            this.onLangChange = this.translate.onLangChange.subscribe((/**
-             * @param {?} event
-             * @return {?}
-             */
-            function (event) {
+            this.onLangChange = this.translate.onLangChange.subscribe(function (event) {
                 if (_this.lastKey) {
                     _this.lastKey = null; // we want to make sure it doesn't return the same value until it's been updated
                     _this.updateValue(query, interpolateParams, event.translations);
                 }
-            }));
+            });
         }
         // subscribe to onDefaultLangChange event, in case the default language changes
         if (!this.onDefaultLangChange) {
-            this.onDefaultLangChange = this.translate.onDefaultLangChange.subscribe((/**
-             * @return {?}
-             */
-            function () {
+            this.onDefaultLangChange = this.translate.onDefaultLangChange.subscribe(function () {
                 if (_this.lastKey) {
                     _this.lastKey = null; // we want to make sure it doesn't return the same value until it's been updated
                     _this.updateValue(query, interpolateParams);
                 }
-            }));
+            });
         }
         return this.value;
     };
     /**
      * Clean any existing subscription to change events
-     */
-    /**
-     * Clean any existing subscription to change events
-     * @private
      * @return {?}
      */
-    TranslatePipe.prototype._dispose = /**
-     * Clean any existing subscription to change events
-     * @private
-     * @return {?}
-     */
-    function () {
+    TranslatePipe.prototype._dispose = function () {
         if (typeof this.onTranslationChange !== 'undefined') {
             this.onTranslationChange.unsubscribe();
             this.onTranslationChange = undefined;
@@ -81053,54 +80539,37 @@ var TranslatePipe = /** @class */ (function () {
     /**
      * @return {?}
      */
-    TranslatePipe.prototype.ngOnDestroy = /**
-     * @return {?}
-     */
-    function () {
+    TranslatePipe.prototype.ngOnDestroy = function () {
         this._dispose();
     };
-    TranslatePipe.decorators = [
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"] },
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"], args: [{
-                    name: 'translate',
-                    pure: false // required to update the value when the promise is resolved
-                },] }
-    ];
-    /** @nocollapse */
-    TranslatePipe.ctorParameters = function () { return [
-        { type: TranslateService },
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
-    ]; };
     return TranslatePipe;
 }());
-if (false) {}
+TranslatePipe.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"], args: [{
+                name: 'translate',
+                pure: false // required to update the value when the promise is resolved
+            },] },
+];
+/** @nocollapse */
+TranslatePipe.ctorParameters = function () { return [
+    { type: TranslateService, },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"], },
+]; };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes} checked by tsc
  */
-/**
- * @record
- */
-function TranslateModuleConfig() { }
-if (false) {}
 var TranslateModule = /** @class */ (function () {
     function TranslateModule() {
     }
     /**
      * Use this method in your root module to provide the TranslateService
-     */
-    /**
-     * Use this method in your root module to provide the TranslateService
      * @param {?=} config
      * @return {?}
      */
-    TranslateModule.forRoot = /**
-     * Use this method in your root module to provide the TranslateService
-     * @param {?=} config
-     * @return {?}
-     */
-    function (config) {
+    TranslateModule.forRoot = function (config) {
         if (config === void 0) { config = {}; }
         return {
             ngModule: TranslateModule,
@@ -81112,26 +80581,16 @@ var TranslateModule = /** @class */ (function () {
                 TranslateStore,
                 { provide: USE_STORE, useValue: config.isolate },
                 { provide: USE_DEFAULT_LANG, useValue: config.useDefaultLang },
-                { provide: USE_EXTEND, useValue: config.extend },
-                { provide: DEFAULT_LANGUAGE, useValue: config.defaultLanguage },
                 TranslateService
             ]
         };
     };
     /**
      * Use this method in your other (non root) modules to import the directive/pipe
-     */
-    /**
-     * Use this method in your other (non root) modules to import the directive/pipe
      * @param {?=} config
      * @return {?}
      */
-    TranslateModule.forChild = /**
-     * Use this method in your other (non root) modules to import the directive/pipe
-     * @param {?=} config
-     * @return {?}
-     */
-    function (config) {
+    TranslateModule.forChild = function (config) {
         if (config === void 0) { config = {}; }
         return {
             ngModule: TranslateModule,
@@ -81142,30 +80601,28 @@ var TranslateModule = /** @class */ (function () {
                 config.missingTranslationHandler || { provide: MissingTranslationHandler, useClass: FakeMissingTranslationHandler },
                 { provide: USE_STORE, useValue: config.isolate },
                 { provide: USE_DEFAULT_LANG, useValue: config.useDefaultLang },
-                { provide: USE_EXTEND, useValue: config.extend },
-                { provide: DEFAULT_LANGUAGE, useValue: config.defaultLanguage },
                 TranslateService
             ]
         };
     };
-    TranslateModule.decorators = [
-        { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"], args: [{
-                    declarations: [
-                        TranslatePipe,
-                        TranslateDirective
-                    ],
-                    exports: [
-                        TranslatePipe,
-                        TranslateDirective
-                    ]
-                },] }
-    ];
     return TranslateModule;
 }());
+TranslateModule.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"], args: [{
+                declarations: [
+                    TranslatePipe,
+                    TranslateDirective
+                ],
+                exports: [
+                    TranslatePipe,
+                    TranslateDirective
+                ]
+            },] },
+];
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes} checked by tsc
  */
 
 

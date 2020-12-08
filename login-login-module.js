@@ -68,7 +68,7 @@ var LoginRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<p>\n  {{ 'login.account' | translate }}<input type=\"text\" [(ngModel)]=\"loginForm.id\" (keypress)=\"keypressHandler($event)\">\n</p>\n\n<p>\n  {{ 'login.password' | translate }}<input type=\"password\" [(ngModel)]=\"loginForm.key\" (keypress)=\"keypressHandler($event)\">\n</p>\n\n<p>\n  <button type=\"button\" (click)=\"logon()\" >{{ 'login.login' | translate }}</button>\n</p>\n\n<p *ngIf=\"showMsg\" class=\"text-danger\">{{ 'login.fail' | translate }}</p>\n\n"
+module.exports = "\n<div class=\"login\">\n  \n  <div class=\"box\">\n    <div class=\"logo\"></div>\n    <h5>Login</h5>\n    <div>\n      <span>{{ 'login.account' | translate }}</span>\n      <input class=\"input100\" type=\"text\" name=\"username\" placeholder=\"Username\" [(ngModel)]=\"loginForm.id\" (keypress)=\"keypressHandler($event)\">\n    </div>\n\n    <div>\n      <span>{{ 'login.password' | translate }}</span>\n      <input type=\"password\" [(ngModel)]=\"loginForm.key\" (keypress)=\"keypressHandler($event)\">\n    </div>\n\n    <div>\n      <button type=\"button\" (click)=\"logon()\" >{{ 'login.login' | translate }}</button>\n    </div>\n\n    <div *ngIf=\"showMsg\" class=\"text-danger\">{{ 'login.fail' | translate }}</div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -79,7 +79,7 @@ module.exports = "\n\n<p>\n  {{ 'login.account' | translate }}<input type=\"text
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".login {\n  width: 100vw;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100vh;\n  background-color: #333; }\n\nh5 {\n  color: #333;\n  text-align: center;\n  margin: 1em 0; }\n\n.box {\n  display: inline-block;\n  min-width: 25em;\n  min-height: 20em;\n  margin: auto;\n  padding: 2em;\n  background-color: #fff;\n  line-height: 2;\n  border-radius: 6px; }\n\n.box input {\n  margin: 3px;\n  padding: 0 .5em;\n  line-height: 1.5; }\n\n.box div {\n  width: 80%;\n  margin: auto; }\n\n.box div span {\n  display: inline-block;\n  width: 4.5em; }\n\n.box button {\n  border: 1px solid #ddd;\n  border-radius: 5em;\n  background-color: #333;\n  color: #fff;\n  padding: .1em 4em;\n  margin: 1em auto 0;\n  display: block;\n  cursor: pointer;\n  width: 96%;\n  outline: 0; }\n\n.logo {\n  background-color: #ddd;\n  width: 5em !important;\n  height: 5em;\n  display: block;\n  border-radius: 5em;\n  margin: 0 auto; }\n"
 
 /***/ }),
 
