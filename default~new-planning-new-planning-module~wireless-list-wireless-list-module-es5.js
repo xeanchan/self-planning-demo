@@ -57,7 +57,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       this.availableNewBsNumber = null;
       this.addFixedBsNumber = null;
       this.bandwidth = null;
-      this.Frequency = null; // constructor(options: {
+      this.Frequency = null;
+      this.isAverageSinr = false;
+      this.sinrRatio = null;
+      this.isAvgThroughput = false;
+      this.throughputRatio = null;
+      this.isCoverage = false;
+      this.coverageRatio = null;
+      this.isUeAvgSinr = false;
+      this.ueAvgSinrRatio = null;
+      this.isUeAvgThroughput = false;
+      this.ueAvgThroughputRatio = null;
+      this.isUeTpByDistance = false;
+      this.ueTpByDistanceRatio = false; // constructor(options: {
       //   sessionid?: string,
       //   taskName?: string,
       //   totalRound?: string,
@@ -422,7 +434,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "input", 8);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_input_ngModelChange_25_listener($event) {
-            return ctx.calculateForm.altitude = $event;
+            return ctx.calculateForm.width = $event;
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -436,7 +448,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "input", 9);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_input_ngModelChange_28_listener($event) {
-            return ctx.calculateForm.width = $event;
+            return ctx.calculateForm.height = $event;
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -450,7 +462,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "input", 10);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_input_ngModelChange_31_listener($event) {
-            return ctx.calculateForm.height = $event;
+            return ctx.calculateForm.altitude = $event;
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -476,7 +488,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "mat-radio-group", 11);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_mat_radio_group_ngModelChange_37_listener($event) {
-            return ctx.calculateForm.seed = $event;
+            return ctx.calculateForm.objectiveIndex = $event;
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "mat-radio-button", 12);
@@ -531,19 +543,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.altitude);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.width);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.height);
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.altitude);
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.seed);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.objectiveIndex);
         }
       },
       directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_7__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgModel"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_8__["MatRadioGroup"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_8__["MatRadioButton"]],

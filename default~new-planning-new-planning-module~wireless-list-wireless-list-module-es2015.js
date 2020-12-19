@@ -42,6 +42,18 @@ class CalculateForm {
         this.addFixedBsNumber = null;
         this.bandwidth = null;
         this.Frequency = null;
+        this.isAverageSinr = false;
+        this.sinrRatio = null;
+        this.isAvgThroughput = false;
+        this.throughputRatio = null;
+        this.isCoverage = false;
+        this.coverageRatio = null;
+        this.isUeAvgSinr = false;
+        this.ueAvgSinrRatio = null;
+        this.isUeAvgThroughput = false;
+        this.ueAvgThroughputRatio = null;
+        this.isUeTpByDistance = false;
+        this.ueTpByDistanceRatio = false;
         // constructor(options: {
         //   sessionid?: string,
         //   taskName?: string,
@@ -249,19 +261,19 @@ NewPlanningComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "td", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "span");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "input", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_input_ngModelChange_25_listener($event) { return ctx.calculateForm.altitude = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_input_ngModelChange_25_listener($event) { return ctx.calculateForm.width = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "\u516C\u5C3A");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "span");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "input", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_input_ngModelChange_28_listener($event) { return ctx.calculateForm.width = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_input_ngModelChange_28_listener($event) { return ctx.calculateForm.height = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "\u516C\u5C3A");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "span");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "input", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_input_ngModelChange_31_listener($event) { return ctx.calculateForm.height = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_input_ngModelChange_31_listener($event) { return ctx.calculateForm.altitude = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "\u516C\u5C3A");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -273,7 +285,7 @@ NewPlanningComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "mat-radio-group", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_mat_radio_group_ngModelChange_37_listener($event) { return ctx.calculateForm.seed = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewPlanningComponent_Template_mat_radio_group_ngModelChange_37_listener($event) { return ctx.calculateForm.objectiveIndex = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "mat-radio-button", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "4G");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -299,13 +311,13 @@ NewPlanningComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.taskName);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.altitude);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.width);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.height);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.altitude);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.seed);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.calculateForm.objectiveIndex);
     } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_7__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgModel"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_8__["MatRadioGroup"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_8__["MatRadioButton"]], styles: [".modalContent[_ngcontent-%COMP%] {\n  color: #333;\n}\n\ntd[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n  margin: 0.3em 0.5em;\n  width: 4em;\n}\n\ntd.th[_ngcontent-%COMP%] {\n  background-color: #eee;\n  text-align: right;\n}\n\n.modalContent[_ngcontent-%COMP%]   table[_ngcontent-%COMP%]   .th[_ngcontent-%COMP%] {\n  width: 12em;\n}\n\nmat-button-toggle-group[_ngcontent-%COMP%] {\n  margin-left: 0.5em;\n}\n\n.mat-radio-button[_ngcontent-%COMP%] {\n  margin-right: 1em;\n}\n\n[_nghost-%COMP%]     .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {\n  line-height: 30px;\n  padding: 0 12px;\n}\n\n.h3[_ngcontent-%COMP%], h3[_ngcontent-%COMP%] {\n  font-size: 1.3rem;\n}\n\nh3[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  font-size: 0.7em;\n  margin-left: 0.5em;\n  font-weight: normal;\n  border: 0;\n  background-color: #ddd;\n  outline: 0;\n  cursor: pointer;\n  border-radius: 4px;\n  padding: 0.3em 1em 0.4em;\n  line-height: 1;\n  vertical-align: bottom;\n}\n\n.size[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin-right: 1em;\n}\n\n.size[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 3em;\n  margin: 0 0.3em;\n}\n\n.note[_ngcontent-%COMP%] {\n  font-size: 0.85em;\n  color: #999;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90aW0vYXRoZW5hL3NyYy9hcHAvbmV3LXBsYW5uaW5nL25ldy1wbGFubmluZy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvbmV3LXBsYW5uaW5nL25ldy1wbGFubmluZy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFdBQUE7QUNDSjs7QURFQTtFQUNJLG1CQUFBO0VBQ0EsVUFBQTtBQ0NKOztBRENBO0VBQ0ksc0JBQUE7RUFDQSxpQkFBQTtBQ0VKOztBREFBO0VBQ0ksV0FBQTtBQ0dKOztBRERBO0VBQ0ksa0JBQUE7QUNJSjs7QURGQTtFQUNJLGlCQUFBO0FDS0o7O0FESEE7RUFDSSxpQkFBQTtFQUNBLGVBQUE7QUNNSjs7QURKQTtFQUNJLGlCQUFBO0FDT0o7O0FETEE7RUFDSSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxTQUFBO0VBQ0Esc0JBQUE7RUFDQSxVQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0Esd0JBQUE7RUFDQSxjQUFBO0VBQ0Esc0JBQUE7QUNRSjs7QUROQTtFQUNJLHFCQUFBO0VBQ0EsaUJBQUE7QUNTSjs7QURQQTtFQUNJLFVBQUE7RUFDQSxlQUFBO0FDVUo7O0FEUkE7RUFDSSxpQkFBQTtFQUNBLFdBQUE7QUNXSiIsImZpbGUiOiJzcmMvYXBwL25ldy1wbGFubmluZy9uZXctcGxhbm5pbmcuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubW9kYWxDb250ZW50IHtcbiAgICBjb2xvcjogIzMzMztcbn1cblxudGQgZGl2IGlucHV0W3R5cGU9XCJ0ZXh0XCJdIHtcbiAgICBtYXJnaW46IC4zZW0gLjVlbTtcbiAgICB3aWR0aDogNGVtO1xufVxudGQudGgge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNlZWU7XG4gICAgdGV4dC1hbGlnbjogcmlnaHQ7XG59XG4ubW9kYWxDb250ZW50IHRhYmxlIC50aCB7XG4gICAgd2lkdGg6IDEyZW07XG59XG5tYXQtYnV0dG9uLXRvZ2dsZS1ncm91cCB7XG4gICAgbWFyZ2luLWxlZnQ6IC41ZW07XG59XG4ubWF0LXJhZGlvLWJ1dHRvbiB7XG4gICAgbWFyZ2luLXJpZ2h0OiAxZW07XG59XG46aG9zdCA6Om5nLWRlZXAgLm1hdC1idXR0b24tdG9nZ2xlLWFwcGVhcmFuY2Utc3RhbmRhcmQgLm1hdC1idXR0b24tdG9nZ2xlLWxhYmVsLWNvbnRlbnQge1xuICAgIGxpbmUtaGVpZ2h0OiAzMHB4O1xuICAgIHBhZGRpbmc6IDAgMTJweDtcbn1cbi5oMywgaDMge1xuICAgIGZvbnQtc2l6ZTogMS4zcmVtO1xufVxuaDMgYnV0dG9uIHtcbiAgICBmb250LXNpemU6IC43ZW07XG4gICAgbWFyZ2luLWxlZnQ6IC41ZW07XG4gICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICBib3JkZXI6IDA7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2RkZDtcbiAgICBvdXRsaW5lOiAwO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgcGFkZGluZzogLjNlbSAxZW0gLjRlbTtcbiAgICBsaW5lLWhlaWdodDogMTtcbiAgICB2ZXJ0aWNhbC1hbGlnbjogYm90dG9tO1xufVxuLnNpemUgc3BhbiB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIG1hcmdpbi1yaWdodDogMWVtO1xufVxuLnNpemUgaW5wdXQge1xuICAgIHdpZHRoOiAzZW07XG4gICAgbWFyZ2luOiAwIC4zZW07XG59XG4ubm90ZSB7XG4gICAgZm9udC1zaXplOiAuODVlbTtcbiAgICBjb2xvcjogIzk5OTtcbn0iLCIubW9kYWxDb250ZW50IHtcbiAgY29sb3I6ICMzMzM7XG59XG5cbnRkIGRpdiBpbnB1dFt0eXBlPXRleHRdIHtcbiAgbWFyZ2luOiAwLjNlbSAwLjVlbTtcbiAgd2lkdGg6IDRlbTtcbn1cblxudGQudGgge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZWVlO1xuICB0ZXh0LWFsaWduOiByaWdodDtcbn1cblxuLm1vZGFsQ29udGVudCB0YWJsZSAudGgge1xuICB3aWR0aDogMTJlbTtcbn1cblxubWF0LWJ1dHRvbi10b2dnbGUtZ3JvdXAge1xuICBtYXJnaW4tbGVmdDogMC41ZW07XG59XG5cbi5tYXQtcmFkaW8tYnV0dG9uIHtcbiAgbWFyZ2luLXJpZ2h0OiAxZW07XG59XG5cbjpob3N0IDo6bmctZGVlcCAubWF0LWJ1dHRvbi10b2dnbGUtYXBwZWFyYW5jZS1zdGFuZGFyZCAubWF0LWJ1dHRvbi10b2dnbGUtbGFiZWwtY29udGVudCB7XG4gIGxpbmUtaGVpZ2h0OiAzMHB4O1xuICBwYWRkaW5nOiAwIDEycHg7XG59XG5cbi5oMywgaDMge1xuICBmb250LXNpemU6IDEuM3JlbTtcbn1cblxuaDMgYnV0dG9uIHtcbiAgZm9udC1zaXplOiAwLjdlbTtcbiAgbWFyZ2luLWxlZnQ6IDAuNWVtO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBib3JkZXI6IDA7XG4gIGJhY2tncm91bmQtY29sb3I6ICNkZGQ7XG4gIG91dGxpbmU6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xuICBwYWRkaW5nOiAwLjNlbSAxZW0gMC40ZW07XG4gIGxpbmUtaGVpZ2h0OiAxO1xuICB2ZXJ0aWNhbC1hbGlnbjogYm90dG9tO1xufVxuXG4uc2l6ZSBzcGFuIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cblxuLnNpemUgaW5wdXQge1xuICB3aWR0aDogM2VtO1xuICBtYXJnaW46IDAgMC4zZW07XG59XG5cbi5ub3RlIHtcbiAgZm9udC1zaXplOiAwLjg1ZW07XG4gIGNvbG9yOiAjOTk5O1xufSJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NewPlanningComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
