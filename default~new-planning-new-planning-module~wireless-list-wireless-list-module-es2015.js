@@ -54,6 +54,15 @@ class CalculateForm {
         this.ueAvgThroughputRatio = null;
         this.isUeTpByDistance = false;
         this.ueTpByDistanceRatio = false;
+        this.modelname = null;
+        this.distanceFactor = null;
+        this.contantFactor = null;
+        this.mctsC = null;
+        this.mctsMimo = null;
+        this.mctsTemperature = null;
+        this.mctsTime = null;
+        this.mctsTestTime = null;
+        this.mctsTotalTime = null;
         // constructor(options: {
         //   sessionid?: string,
         //   taskName?: string,
@@ -224,7 +233,7 @@ NewPlanningComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "\u65B0\u5C08\u6848\u898F\u5283 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "\u8F09\u5165");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "\u532F\u5165\u820A\u6A94(.csv)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

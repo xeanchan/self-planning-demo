@@ -69,7 +69,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       this.isUeAvgThroughput = false;
       this.ueAvgThroughputRatio = null;
       this.isUeTpByDistance = false;
-      this.ueTpByDistanceRatio = false; // constructor(options: {
+      this.ueTpByDistanceRatio = false;
+      this.modelname = null;
+      this.distanceFactor = null;
+      this.contantFactor = null;
+      this.mctsC = null;
+      this.mctsMimo = null;
+      this.mctsTemperature = null;
+      this.mctsTime = null;
+      this.mctsTestTime = null;
+      this.mctsTotalTime = null; // constructor(options: {
       //   sessionid?: string,
       //   taskName?: string,
       //   totalRound?: string,
@@ -355,7 +364,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "\u8F09\u5165");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "\u532F\u5165\u820A\u6A94(.csv)");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
