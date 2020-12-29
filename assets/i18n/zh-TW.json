@@ -4,5 +4,13 @@
 	"login.account": "帳號",
 	"login.password": "密碼",
 	"login.login": "登入",
-	"login.fail": "使用者密碼有誤, 請確認."
+	"login.fail": "使用者密碼有誤, 請確認.",
+	"field.required": "必填欄位",
+	"image.required": "請選擇圖檔",
+	"numeric.enter": "請填寫數字",
+	"delete": "刪除",
+	"altitude": "高",
+	"altitude.setting": "高度",
+	"material.setting": "材質設定",
+	"notaskList": "沒有任務正在運算中."
 }
