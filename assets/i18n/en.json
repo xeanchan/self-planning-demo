@@ -4,5 +4,14 @@
 	"login.account": "Account",
 	"login.password": "Password",
 	"login.login": "Login",
-	"login.fail": "Invalid user password, please confirm."
+	"login.fail": "Invalid user password, please confirm.",
+	"field.required": "Field is required.",
+	"image.required": "Please upload image.",
+	"numeric.enter": "Please Enter Numeric.",
+	"delete": "delete",
+	"altitude": "altitude",
+	"altitude.setting": "高度",
+	"material.setting": "材質設定",
+	"notaskList": "No Data.",
+	"home": "Home"
 }
