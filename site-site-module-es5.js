@@ -74321,7 +74321,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](254, "mat-panel-title");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](255, "\u7121\u7DDA\u6A21\u578B\u53C3\u6578(@jane\u8981\u63D0\u4F9Bapi)");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](255, "\u7121\u7DDA\u6A21\u578B\u53C3\u6578");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 

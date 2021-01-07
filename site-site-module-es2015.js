@@ -60696,7 +60696,7 @@ SitePlanningComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](252, "mat-expansion-panel");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](253, "mat-expansion-panel-header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](254, "mat-panel-title");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](255, "\u7121\u7DDA\u6A21\u578B\u53C3\u6578(@jane\u8981\u63D0\u4F9Bapi)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](255, "\u7121\u7DDA\u6A21\u578B\u53C3\u6578");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](256, "ul");
