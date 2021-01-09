@@ -13,5 +13,6 @@
 	"altitude.setting": "高度",
 	"material.setting": "材質設定",
 	"notaskList": "No Data.",
-	"home": "Home"
+	"home": "Home",
+	"timeout": "用戶未授權或是已過期, 請重新登入."
 }
