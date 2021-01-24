@@ -14,5 +14,6 @@
 	"material.setting": "材質設定",
 	"notaskList": "沒有任務正在運算中.",
 	"home": "回首頁",
-	"timeout": "用戶未授權或是已過期, 請重新登入."
+	"timeout": "用戶未授權或是已過期, 請重新登入.",
+	"backto.list": "返回場域清單"
 }
