@@ -15,5 +15,23 @@
 	"notaskList": "沒有任務正在運算中.",
 	"home": "回首頁",
 	"timeout": "用戶未授權或是已過期, 請重新登入.",
-	"backto.list": "返回場域清單"
+	"save": "儲存",
+	"backto.list": "返回場域清單",
+	"save.success": "儲存完成.",
+	"save.failed": "儲存失敗.",
+	"bandwidth": "系統頻寬",
+	"frequency": "系統頻率",
+	"zValue": "切面高度",
+	"sinrMap": "訊號品質圖",
+	"connectionMap": "訊號覆蓋圖",
+	"rsrpMap": "訊號強度圖",
+
+	"statistics.site_modulation": "場域Modulation統計",
+	"statistics.site_modulation_cdf": "場域Modulation CDF圖",
+	"statistics.site_signal": "場域訊號強度統計",
+	"statistics.site_signal_cdf": "場域訊號強度CDF圖",
+	"statistics.ue_modulation": "行動終端Modulation統計",
+	"statistics.ue_modulation_cdf": "行動終端Modulation CDF圖",
+	"statistics.ue_signal": "行動終端訊號強度統計",
+	"statistics.ue_signal_cdf": "行動終端訊號強度CDF圖"
 }

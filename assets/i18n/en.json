@@ -15,5 +15,25 @@
 	"notaskList": "No Data.",
 	"home": "Home",
 	"timeout": "用戶未授權或是已過期, 請重新登入.",
-	"backto.list": "Back to "
+	"save": "Save",
+	"backto.list": "Back to",
+	"save.success": "Save Success.",
+	"save.failed": "Save Failed.",
+	"bandwidth": "系統頻寬",
+	"frequency": "系統頻率",
+	"zValue": "切面高度",
+	"sinrMap": "訊號品質圖",
+	"connectionMap": "訊號覆蓋圖",
+	"rsrpMap": "訊號強度圖",
+
+	"statistics.site_modulation": "場域Modulation統計",
+	"statistics.site_modulation_cdf": "場域Modulation CDF圖",
+	"statistics.site_signal": "場域訊號強度統計",
+	"statistics.site_signal_cdf": "場域訊號強度CDF圖",
+	"statistics.ue_modulation": "UE Modulation統計",
+	"statistics.ue_modulation_cdf": "UE Modulation CDF圖",
+	"statistics.ue_signal": "UE 訊號強度統計",
+	"statistics.ue_signal_cdf": "UE 訊號強度CDF圖",
+
+	
 }
