@@ -33,6 +33,8 @@
 	"isUeAvgSinr": "強化行動終端整體訊號品質",
 	"isUeAvgThroughput": "強化行動終端傳輸速率上限",
 	"isUeTpByDistance": "強化行動終端有訊號覆蓋的比率",
+	"new.ue": "新增行動終端",
+	"ue": "行動終端",
 
 	"statistics.site_modulation": "場域Modulation統計",
 	"statistics.site_modulation_cdf": "場域Modulation CDF圖",
