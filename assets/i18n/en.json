@@ -35,6 +35,7 @@
 	"isUeTpByDistance": "強化行動終端有訊號覆蓋的比率",
 	"new.ue": "新增行動終端",
 	"ue": "行動終端",
+	"xlxs.fail": "Excel檔案異常!",
 
 	"statistics.site_modulation": "場域Modulation統計",
 	"statistics.site_modulation_cdf": "場域Modulation CDF圖",
