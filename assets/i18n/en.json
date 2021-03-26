@@ -39,6 +39,9 @@
 	"powerRange": "傳輸功率",
 	"powerMinRange": "最小傳輸功率",
 	"powerMaxRange": "最大傳輸功率",
+	"show.ue": "顯示行動終端",
+	"show.obstacle": "顯示障礙物",
+	"show.candidate": "顯示AP",
 
 	"statistics.site_modulation": "場域Modulation統計",
 	"statistics.site_modulation_cdf": "場域Modulation CDF圖",
