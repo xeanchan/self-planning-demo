@@ -109,7 +109,8 @@
 	"planning.itri.51": "ITRI 51館5F",
 	"planning.taichung": "台中智機場域",
 	"planning.user_define": "使用者自定義",
-	"planning.algorithm": "規劃演算法設定",	
+	"planning.algorithm": "規劃演算法設定",
+	"planning.limit": "File restrictions",
 	"rotate": "角度",
 	"z.height": "切面高度",
 	"z.height.note": "( 單位:公尺，最多可設定3組高度 )",
@@ -172,5 +173,13 @@
 	"current.version": "Current Version",
 	"copyright.1": "Copyright © 2021 ITRI 工業技術研究院. All rights reserved.",
 	"copyright.2": "建議使用瀏覽器：Google Chrome，並將螢幕解析度設定為1366*768以上，瀏覽器畫面縮放維持100%，以獲得最佳瀏覽效果",
-	"opertaion.note": "操作說明"
+	"opertaion.note": "操作說明",
+	"tasklist.add.confirm": "您尚有未紀錄的任務，要繼續沿用嗎?",
+	"tasklist.add.useOld": "是，沿用",
+	"tasklist.add.useNew": "否，捨棄未紀錄的任務，建立新任務",
+	"cancel": "取消",
+	"loading": "讀取中",
+	"calculating": "運算中...",
+	"view_3d.show.type": "顯示項目",
+	"view_3d.heatmap.type": "Heat Map 類型"
 }
