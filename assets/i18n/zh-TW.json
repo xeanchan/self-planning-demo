@@ -181,5 +181,8 @@
 	"loading": "讀取中",
 	"calculating": "運算中...",
 	"view3d.show.type": "顯示項目",
-	"view3d.heatmap.type": "Heat Map 類型"
+	"view3d.heatmap.type": "Heat Map 類型",
+	"ap.num": "連線對象",
+	"confirm.delete": "您確定要刪除",
+	"delete.fail": "刪除失敗!"
 }

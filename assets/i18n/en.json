@@ -114,7 +114,7 @@
 	"rotate": "角度",
 	"z.height": "切面高度",
 	"z.height.note": "( 單位:公尺，最多可設定3組高度 )",
-	"meter": "公尺",
+	"meter": "meter",
 	"cm": "公分",
 	"material": "材質",
 	"material.setting": "材質設定",
@@ -181,5 +181,8 @@
 	"loading": "讀取中",
 	"calculating": "運算中...",
 	"view3d.show.type": "顯示項目",
-	"view3d.heatmap.type": "Heat Map 類型"
+	"view3d.heatmap.type": "Heat Map 類型",
+	"ap.num": "連線對象",
+	"confirm.delete": "Are You sure to delete",
+	"delete.fail": "delete failed!"
 }
