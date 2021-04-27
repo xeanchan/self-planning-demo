@@ -184,5 +184,6 @@
 	"view3d.heatmap.type": "Heat Map 類型",
 	"ap.num": "連線對象",
 	"confirm.delete": "Are You sure to delete",
-	"delete.fail": "delete failed!"
+	"delete.fail": "delete failed!",
+	"planning.algorithm.model": "Wifi模型"
 }
