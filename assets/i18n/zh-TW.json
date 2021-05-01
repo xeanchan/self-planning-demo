@@ -185,5 +185,6 @@
 	"ap.num": "連線對象",
 	"confirm.delete": "您確定要刪除",
 	"delete.fail": "刪除失敗!",
-	"planning.algorithm.model": "Wifi模型"
+	"planning.algorithm.model": "Wifi模型",
+	"signal.quality": "訊號品質"
 }
