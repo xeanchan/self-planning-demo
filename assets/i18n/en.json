@@ -143,7 +143,7 @@
 	"result.section.coverage": "Layered coverage ratio",
 	"result.section.sinr": "Layered average signal quality",
 	"result.section.rsrp": "Layered average siganl strength",
-	"result.propose": "建議方案",
+	"result.propose": "suggested plan",
 	"result.propose.wait_select_1": "Selected position",
 	"result.propose.wait_select_2": "( {0} places)",
 	"result.propose.candidateBs.num": "Idenetity",
