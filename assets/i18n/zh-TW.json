@@ -186,5 +186,7 @@
 	"confirm.delete": "您確定要刪除",
 	"delete.fail": "刪除失敗!",
 	"planning.algorithm.model": "Wifi模型",
-	"signal.quality": "訊號品質"
+	"signal.quality": "訊號品質",
+	"file": "選擇檔案",
+	"nofile": "未選擇檔案"
 }

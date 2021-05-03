@@ -186,5 +186,7 @@
 	"confirm.delete": "Are You sure to delete",
 	"delete.fail": "delete failed!",
 	"planning.algorithm.model": "Wifi model",
-	"signal.quality": "Signal quality"
+	"signal.quality": "Signal quality",
+	"file": "select map file",
+	"nofile": "file name"
 }
