@@ -188,5 +188,8 @@
 	"planning.algorithm.model": "Wifi model",
 	"signal.quality": "Signal quality",
 	"file": "select map file",
-	"nofile": "file name"
+	"nofile": "file name",
+	"result.performance.field": "場域效能分析",
+	"result.performance.ue": "行動終端效能分析",
+	"result.performance.height": "切面高度分析"
 }
